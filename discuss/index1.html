@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style3.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="info"><h1>News And Discussion</h1></div>
+
+<input id="myInput" type="text" placeholder="Search.." class="search1">
+<br>
+
+<div class="a">
+    <div class="c">
+        <img src="/virat1.jpg" alt="Virat kohli" class="img">
+    </div>
+<div class="b">
+<ul id="myList">
+  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto magnam corporis cupiditate. Sed debitis ad obcaecati est! Iste, ad impedit eaque, nisi aperiam repellendus cum deleniti quasi odio doloribus eius!</li>
+  <li>Second item</li>
+  <li>hello friends</li>
+  <li>hii everyone how are you</li>
+</ul></div>
+</div>
+  
+</body>
+</html>

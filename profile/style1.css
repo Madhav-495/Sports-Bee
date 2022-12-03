@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.unsplash.com/photo-1512719994953-eabf50895df7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3JpY2tldHxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-size:100% 100%;
+    backface-visibility:unset;
+
+    box-sizing: border-box;
+}
+h2{
+    text-shadow: 4px 4px rgb(212, 73, 8);
+}
+
+img{
+    filter:drop-shadow(12px 12px 12px rgb(107, 212, 8));
+
+}
+.fa-search{
+    color:rgb(34, 224, 85);
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: larger;
+}
+
+.cont{
+    
+    position: absolute;
+    height: 40px;
+    top: 60px;
+    left:50%;
+    display: flex;
+
+    justify-items: center;
+    background-color: rgb(210, 226, 239);
+    border-radius: 100px;
+    padding: 8px;
+    transform: translate(-50%,-50%);
+
+}
+.searchbar{
+    width:0;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+}
+input[type="text"]{
+    color:black;
+    font-size: 20px;
+}
+ .cont :hover .fa-search {
+    color: white;
+    background-color:darkgreen;
+    cursor:zoom-in;}
+.cont :hover .searchbar{
+    width: 400px;
+}
+
+.virat{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue
+}
+.zebra{
+    position: absolute;
+    top: 150px;
+    left: 12%;
+}
+table{
+    width: 200%;
+    height: 200px;
+
+}
+
+td{
+    text-align: center;
+}
+td{
+    color: white;
+}
+th{
+
+    color:black
+}
+
+
+.kohli{
+    font-size: large;
+    position: absolute;
+    top:450px;
+    left:10%;
+}
+.b{ 
+font-size: large;
+}

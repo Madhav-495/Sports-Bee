@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team page</title>
+    <link rel="stylesheet" href="teampage.css">
+    
+</head>
+<style>
+    .container{
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+    grid-gap: 20px;
+}
+.team-image{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.team-logo{
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 50px;
+    z-index: 2;
+    margin-top: -25px;
+}
+.topbar{
+    background-color: blue;
+    text-align: center;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+body{
+    width: 100%;
+    height: auto;
+    background: repeating-radial-gradient(
+        circle at 0 0,
+        #eee,
+        #ccc 50px
+    );
+}
+.team-1{
+    background-color: rgba(0, 162, 255, 0.908);
+}
+.team-2{
+    background-color: rgb(246, 255, 0);
+}
+.team-3{
+    background-color: rgba(46, 8, 53, 0.988);
+}
+.team-4{
+    background-color: rgb(13, 16, 18);
+}
+.team-5{
+    background-color: rgba(102, 0, 255, 0.908);
+}
+.team-6{
+    background-color: rgba(59, 114, 30, 0.908);
+}
+.team-7{
+    background-color: rgb(113, 6, 26);
+}
+.team-8{
+    background-color: rgb(230, 47, 47);
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+p{
+    background-color: bisque;
+    border-style: dashed;
+    border-color: rgb(105, 102, 102);
+    border-radius: 5px;
+}
+.plus-button{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(30, 32, 33);
+    background-color: rgba(255, 255, 255, 0.866);
+    border-radius: 4px;
+    border: 1px solid rgb(211, 176, 176);
+}
+</style>
+<body>
+<header>
+    <div class="topbar">
+        <h1> TEAMS AND CLUBS </h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+    <div class="team-1">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/IND.png" >
+        <img class="team-logo" src="https://www.bing.com/th?id=OIP.NVVIgEFgK5cVVahdmvVrYAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+        <div class="box-1">
+        <form action="http://localhost:5000/teampage/INDIA">
+            <h2><button class="plus-button">SAURYA</button></h2>
+        </form>
+            
+            <!-- <h2><a href="http://localhost:5000/teampage/India"></a></h2> -->
+            <p name="Indiades">DESCRIPTION : this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    <div class="team-2">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/AUS.png" >
+        <img class="team-logo" src="https://th.bing.com/th/id/OIP.nfWIMe2qmaWrjWadrI-cuAHaFj?pid=ImgDet&rs=1" >
+        <div class="box-2">
+            <h2><button class="plus-button">GAURKHA</button></h2>
+            <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    <div class="team-3">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/ENG.png" >
+        <img class="team-logo" src="https://th.bing.com/th/id/OIP.KFpuGihAdqxcRA9-O04CUAHaFj?w=221&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" >
+        <div class="box-3">
+            <h2><button class="plus-button">VEER</button></h2>
+            <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    <div class="team-4">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/NZ.png" >
+        <img class="team-logo" src="https://th.bing.com/th/id/OIP.RizgHgSEYP8ckWtE7haclwHaIE?w=149&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" >
+        <div class="box-4">
+            <h2><button class="plus-button">BHEEM</button></h2>
+            <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    <div class="team-5">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/SL.png" >
+        <img class="team-logo" src="https://www.bing.com/th?id=OIP.8Bif9h5MkeKYvneSOH1m9AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+        <div class="box-5">
+            <h2><button class="plus-button">ARJUN</button></h2>
+            <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    <div class="team-6">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/SA.png" >
+        <img class="team-logo" src="https://www.bing.com/th?id=OIP.Lmvqn_pJ_OmsCXhYwOL7QQHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+        <div class="box-6">
+            <h2><button class="plus-button">KARN</button></h2>
+            <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    <div class="team-7">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/WI.png" >
+        <img class="team-logo" src="https://www.bing.com/th?id=OIP.zCDPgaWF-GKRAE-3wwZxlQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+        <div class="box-7">
+            <h2><button class="plus-button">NAYAK</button></h2>
+            <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    <div class="team-8">
+        <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/ZIM.png" >
+        <img class="team-logo" src="https://th.bing.com/th/id/OIP.5ecKS0cyqXlpNnjbI1cgVgAAAA?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" >
+        <div class="box-8">
+            <h2><button class="plus-button">YODHHA</button></h2>
+            <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+        </div>
+    </div>
+    </div>
+</main>
+</body>
+</html>

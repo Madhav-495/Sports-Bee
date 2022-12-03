@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-color: rgb(23, 198, 221);
+    width: inherit;
+    height: 186px;
+    position: relative;
+    top: -22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.matches {
+    width: inherit;
+    height: 100px;
+    background-color: rgb(211, 201, 201);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#logo1 {
+    height: 66px;
+    margin-top: 10px;
+    width: 72px;
+}
+
+#logo2 {
+    height: 66px;
+    margin-top: 10px;
+    width: 72px;
+}
+
+#Date {
+    position: relative;
+    left: 405px;
+    width: 265px;
+    height: 30px;
+}
+
+#search {
+    float: right;
+    position: absolute;
+    right: 635px;
+    display: flex;
+    align-items: center;
+    top: 182px;
+    height: 35px;
+    width: 58px;
+}
+
+#team1 {
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+    left: -64px;
+}
+
+#venue {
+    position: relative;
+    left: -73px;
+}
+
+#Venue {
+    position: relative;
+    right: 108px;
+}
+
+#team2 {
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+    right: -47px;
+}
+
+#date {
+    font-size: x-large;
+    position: relative;
+    right: 99px;
+
+}

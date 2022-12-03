@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("av.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-size:100% 100%;
+    backface-visibility:unset;
+
+    box-sizing: border-box;
+
+}
+.mylist{
+    margin: 4px;
+}
+.info{
+    display: flex;
+    color:forestgreen;
+    justify-content: center;
+    font-size: large;
+    font-style:italic;
+}
+.search1{
+    width: 18%;
+    height:30px;
+    border-radius: 8px;
+    
+    border: none;
+    outline: none;
+    font-size: large;
+    font-weight: 600;
+    position: relative;
+    left:40%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.b{
+    color: white;
+    font-size: 25px;
+}
+.a{
+    
+    position: relative;
+    top: 40px;;
+    display: grid;
+    grid-template-columns:20% 80%;
+    
+}
+@media  screen  and (max-width :1200px){
+    .a{
+        color: blue;
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+    
+}

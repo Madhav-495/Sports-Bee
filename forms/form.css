@@ -1,0 +1,24 @@
+.header{
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bolder;
+    color: cyan;
+}
+body{
+    background-image: url("https://th.bing.com/th/id/OIP.rmfJEQK2L0uoPy6KNCsSQwHaDt?pid=ImgDet&rs=1");
+}
+#description{
+    position: absolute;
+    left: 140px;
+    right: 140px;
+    top: 250px;
+    height: 200px;
+}
+.post{
+    position: absolute;
+    top: 550px;
+    left: 45%;
+    height: 40px;
+    width: 8%;
+}
