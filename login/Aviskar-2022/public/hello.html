@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <input type="checkbox"  class="toggle-btn" name="">
+    
+        
+        <div class="signup">
+            <form action="/signup" method="POST" name="signupform" >
+            <div class="name">
+                <span>Username :</span>
+                <input type="text" placeholder="Enter name" name="username" class="nameinp" required>
+                <b><span class="formerror"> </span></b>
+            </div>
+            <div class="phone">
+                <span>Phone number :</span>
+                <input type="text" placeholder="   **********" name="phone" class="phoneinp" required>
+                <b><span class="formerror"> </span></b>
+            </div>
+           
+            
+            <div class="email">
+                <span>E-mail :</span>
+                <input type="text" placeholder="E-@gmail.com" name="email" class="emailinp" required>
+                <b><span class="formerror"> </span></b>
+            </div>
+            <div class="password">
+                <span>Password :</span>
+                <input type="password" placeholder="**********" name="password" class="passwordinp" required>
+                <b><span class="formerror"> </span></b>
+            </div>
+            <div class="cnf">
+                <span>Confirm Password :</span>
+                <input type="password" placeholder="**********" name="cnfpassword" class="cnfinp" required>
+                <b><span class="formerror"> </span></b>
+            </div>
+        <div class="sub">
+                <input type="submit" value="Signup" name="" class="submitinp" required >
+        </div>
+        </div></form>
+        
+        <div class="login">
+            <form action="/login" method="POST">
+            <div class="email1">
+                <span>E-mail :</span>
+                <input type="text" placeholder="E-@gmail.com" name="email2" class="emailinp1" required>
+            </div>
+            <div class="password1">
+                <span>Password :</span>
+                <input type="password" placeholder="**********" name="password2" class="passwordinp1" required>
+            </div>
+            <div>
+                <input type="submit" value="Login" class="lgn" >
+            </div>
+            <button class="loginBtn loginBtn--facebook">
+                <a href="/auth/facebook">Login With facebook</a>
+              </button>
+              
+              <button class="loginBtn loginBtn--google">
+                <a href="/auth/google/callback">Login with google</a>
+              </button>
+        </div>
+        </form>
+        
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    // function seterrors(id,error){
+    //     element=$(id)
+    // }
+    // function validation(){
+    //     clearerrors();
+    //     var returnval=true;
+    //     var name=$('.name').val();
+    //     var phoneinp=$('.phoneip').val();
+    //     if(phone.length()!=10){
+    //         seterrors(".phoneip")
+    //         returnval=false;
+    //     }
+        
+    // }
+</script>
+</html>

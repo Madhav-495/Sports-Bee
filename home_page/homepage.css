@@ -1,0 +1,268 @@
+.top_bar{
+    height: 80px;
+    background-color: rgb(18, 89, 160);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+.homelogo{
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 30px;
+}
+.schedule{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.clubs{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.discuss{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.stats{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.trivia{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.login{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    height: 40px;
+    width: 100px;
+    color: rgb(67, 2, 247);
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgb(24, 228, 232);
+    border-radius: 4px;
+}
+b{
+    color: blanchedalmond;
+}
+.schedule1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 30px;
+    height: 170px; 
+}
+.clubs1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 330px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.discuss1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 540px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.stats1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 750px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.trivia1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 960px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.copyright{
+    position: absolute;
+    top: 1170px;
+    left: 0px;
+    right: 0px;
+}
+p{
+    text-align: center;
+    font-style: oblique;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+body{
+    background-image: url("https://i.pinimg.com/736x/55/2d/e6/552de69cae5bfdd96dde809077062c19.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px;
+    padding: 0px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    backface-visibility: unset;
+}
+@media screen and (max-width: 550px) and (min-width: 355px) {
+    .top_bar{
+        height: 100px;
+        background-color: rgb(18, 89, 160);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+    .homelogo{
+        clip-path: circle(50% at 50% 50%);
+        position: absolute;
+        top: 50px;
+    }
+    .login{
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        height: 40px;
+        width: 100px;
+        color: rgb(67, 2, 247);
+        font-size: 30px;
+        font-weight: 700;
+        background-color: rgb(24, 228, 232);
+        border-radius: 4px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .top_bar{
+        height: 100px;
+        background-color: rgb(18, 89, 160);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+    .homelogo{
+        clip-path: circle(50% at 50% 50%);
+        position: absolute;
+        top: 50px;
+    }
+    .login{
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        height: 40px;
+        width: 100px;
+        color: rgb(67, 2, 247);
+        font-size: 30px;
+        font-weight: 700;
+        background-color: rgb(24, 228, 232);
+        border-radius: 4px;
+    }
+    .schedule_img{
+        width: 200px;
+        height: 150px;
+    }
+    .clubs_img{
+        width: 200px;
+        height: 150px;
+    }
+    .discuss_img{
+        width: 200px;
+        height: 150px;
+    }
+    .stats_img{
+        width: 200px;
+        height: 150px;
+    }
+    .trivia_img{
+        width: 200px;
+        height: 150px;
+    }
+}
+@media screen and (min-width: 900px){
+    .detail1{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail2{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail3{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail4{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail5{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+}

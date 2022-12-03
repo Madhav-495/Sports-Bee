@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://t4.ftcdn.net/jpg/04/75/67/67/360_F_475676739_4uSdpV10kGemUK6JN0MPrWLVOhxyZ49R.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            backface-visibility: unset;
+
+            box-sizing: border-box;
+
+        }
+
+        .info {
+            display: flex;
+            color: white;
+            justify-content: center;
+            font-size: large;
+            font-style: italic;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .b {
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            left: 30%;
+            top: 40px;
+            border: 5px solid rgba(236, 248, 3, 0.633);
+            box-sizing: content-box;
+            padding: 12px;
+            border-radius: 4px;
+            
+        }
+
+        .a {
+
+            position: relative;
+            top: 80px;
+            ;
+            display: grid;
+            grid-template-columns: 20% 80%;
+
+        }
+
+        @media screen and (max-width :1200px) {
+            .a {
+                color: blue;
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="info">
+        <h1>News And Discussions</h1>
+    </div>
+
+
+    <br>
+   
+    <div class="a">
+         {{#each news}}
+        <div class="c">
+            <img src={{image}}
+                alt="image" class="img">
+        </div>
+        <div class="b">
+             {{descript}}
+
+        </div>
+        {{/each}}
+    </div>
+    
+
+</body>
+
+</html>

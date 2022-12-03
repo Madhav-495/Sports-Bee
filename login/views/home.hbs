@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        .top_bar{
+    height: 80px;
+    background-color: rgb(18, 89, 160);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+.homelogo{
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 30px;
+}
+.schedule{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.clubs{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.discuss{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.stats{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.trivia{
+    font-size: larger;
+    font-weight: bolder;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.login{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    height: 40px;
+    width: 100px;
+    color: rgb(67, 2, 247);
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgb(24, 228, 232);
+    border-radius: 4px;
+}
+b{
+    color: blanchedalmond;
+}
+.schedule1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 30px;
+    height: 170px; 
+}
+.clubs1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 330px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.discuss1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 540px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.stats1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 750px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.trivia1{
+    border: 2px solid rgba(180, 174, 174, 0.633);
+    box-sizing: content-box;
+    padding: 12px;
+    border-radius: 4px;
+    /* background-color: seashell; */
+    position: absolute;
+    top: 960px;
+    left: 30px;
+    right: 30px;
+    height: 170px;
+}
+.copyright{
+    position: absolute;
+    top: 1170px;
+    left: 0px;
+    right: 0px;
+}
+p{
+    text-align: center;
+    font-style: oblique;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+body{
+    background-image: url("https://i.pinimg.com/736x/55/2d/e6/552de69cae5bfdd96dde809077062c19.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px;
+    padding: 0px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    backface-visibility: unset;
+}
+@media screen and (max-width: 550px) and (min-width: 355px) {
+    .top_bar{
+        height: 100px;
+        background-color: rgb(18, 89, 160);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+    .homelogo{
+        clip-path: circle(50% at 50% 50%);
+        position: absolute;
+        top: 50px;
+    }
+    .login{
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        height: 40px;
+        width: 100px;
+        color: rgb(67, 2, 247);
+        font-size: 30px;
+        font-weight: 700;
+        background-color: rgb(24, 228, 232);
+        border-radius: 4px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .top_bar{
+        height: 100px;
+        background-color: rgb(18, 89, 160);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+    .homelogo{
+        clip-path: circle(50% at 50% 50%);
+        position: absolute;
+        top: 50px;
+    }
+    .login{
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        height: 40px;
+        width: 100px;
+        color: rgb(67, 2, 247);
+        font-size: 30px;
+        font-weight: 700;
+        background-color: rgb(24, 228, 232);
+        border-radius: 4px;
+    }
+    .schedule_img{
+        width: 200px;
+        height: 150px;
+    }
+    .clubs_img{
+        width: 200px;
+        height: 150px;
+    }
+    .discuss_img{
+        width: 200px;
+        height: 150px;
+    }
+    .stats_img{
+        width: 200px;
+        height: 150px;
+    }
+    .trivia_img{
+        width: 200px;
+        height: 150px;
+    }
+}
+@media screen and (min-width: 900px){
+    .detail1{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail2{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail3{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail4{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .detail5{
+        color: azure;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="top_bar">
+        <a href="http://localhost:5000/">
+        <img class="homelogo" src="https://th.bing.com/th/id/OIP.wJKV6UpPabGDFwfcj50UagHaH3?w=186&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="50px"></a>
+        <a class="schedule" href="http://localhost:5000/calendar/">Schedule</a>
+        <a class="clubs" href="http://localhost:5000/teampage">Clubs&Groups</a>
+        <a class="discuss" href="http://localhost:5000/discuss">Discuss</a>
+        <a class="stats"href="http://localhost:5000/stats/">Stats</a>
+        <a class="trivia" href="http://localhost:5000/trivias">Trivia</a>
+        
+        {{#if parameter}}
+        <button class="login"><a href="http://localhost:5000/logout/">logout</a></button>
+        {{else}}
+        <button class="login"><a href="http://localhost:5000/login/">login</a></button>
+        {{/if}}
+    </div>
+    <div class="container">
+        <div class="schedule1">
+            <b>SCHEDULE</b>
+            <br>
+            <a href="http://localhost:5000/calendar/">
+            <img class="schedule_img" src="https://th.bing.com/th/id/OIF.9qrPKCBXaxkgGXd5axLdIg?pid=ImgDet&rs=1" height="150px">
+            </a>
+            <pre class="detail1" >GET ALL THE LATEST SECHDULE HERE</pre>
+        </div>
+        <div class="clubs1">
+            <b>CLUBS</b>
+            <br>
+            <a href="http://localhost:5000/teampage">
+            <img class="clubs_img" src="https://i.pinimg.com/originals/2c/ba/88/2cba8895ac3ee9c520ab79f88e315f49.jpg" height="150px" width="263.33px"></a>
+            <pre class="detail2">GET ALL THE TEAMS AND THEIR INFO</pre>
+        </div>
+        <div class="discuss1">
+            <b>DISCUSS</b>
+            <br>
+            <a href=""></a>
+            <img class="discuss_img" src="https://image.slidesharecdn.com/the-person-who-most-inspires-me1365-111124034452-phpapp01/95/the-person-who-most-inspires-me-4-728.jpg?cb=1322107569" height="150px" width="263.33px">
+            <pre class="detail3">GET ALL LATEST NEWS</pre>
+        </div>
+        <div class="stats1">
+            <b>STATS</b>
+            <br>
+            <a href="http://localhost:5000/stats/">
+            <img class="stats_img" src="https://image.crictracker.com/wp-content/uploads/2020/10/Fastest-to-50-wickets-in-IPL.jpg" height="150px" width="263.33px"></a>
+            <pre class="detail4">GET PLAYER ANALYSIS AND THEIR STATS</pre>
+        </div>
+        <div class="trivia1">
+            <b>TRIVIA</b>
+            <br>
+            <a href="http://localhost:5000/trivias">
+            <img class="trivia_img" src="https://images-na.ssl-images-amazon.com/images/I/71Dck4UJ8+L.jpg" height="150px" width="263.33px"></a>
+            <pre class="detail5">PLAY A TRIVIA </pre>
+        </div>
+        <div class="copyright">
+            <p>@copyright2022MNNIT</p>
+        </div>
+    </div>
+</body>
+</html>

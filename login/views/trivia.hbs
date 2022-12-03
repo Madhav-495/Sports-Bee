@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trivia</title>
+    <style>
+        body{
+            background-color: rgb(129, 115, 115);
+        }
+        .quiz {
+            background-color: brown;
+            color: beige;
+            height: 200px;
+        }
+        .heading{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        #triviasearch{
+            position: absolute;
+            left: 10%;
+            right: 10%;
+        }
+        #content{
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>search an option</h1>
+    <input type="text" name="triviasearch" id="triviasearch" placeholder="search">
+    <div id="content">
+        {{#each data}}
+
+        <div class="quiz">
+            <h1 class="heading">{{heading}}</h1>
+            <p class="des">{{description}}</p>
+        </div>
+
+        {{/each}}
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script>
+
+
+
+
+    $('#triviasearch').keyup(function () {
+        var data = $('#triviasearch').val().toLowerCase();
+        $('#content *').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(data) > -1)
+        })
+    })
+
+
+</script>
+
+</html>
