@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports-Bee</title>
+
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+    <!-- css stylesheet -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/clubs.css">
+    </head>
+    <style>
+    </style>
+
+    <body>
+        <!-- navbar started -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            
+            <a class="navbar-brand" href="#">Sports-Bee</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sechdule</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Clubs&Teams</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#">Discuss&News</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#">PlayerProfile</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+            
+          </nav>
+          <!-- navbar ended -->
+          <!-- content for team page and team clubs starts -->
+        <main>
+            <div class="container1 mb-5">
+            <div class="team-1 text-center">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/IND.png" >
+                <img class="team-logo" src="https://www.bing.com/th?id=OIP.NVVIgEFgK5cVVahdmvVrYAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+                <div class="box-1">
+                    <a href="http://localhost:5000/teampage/INDIA">
+                    <h2><button class="plus-button">INDIA</button></h2></a>
+                
+                    
+                    <!-- <h2><a href="http://localhost:5000/teampage/India"></a></h2> -->
+                    <p name="Indiades">DESCRIPTION : {{descript}}</p>
+                </div>
+                <button type="button " class="btn btn-warning" style="margin-bottom:7%"><a href="http://">Explore</a></button>
+            </div>
+            <div class="team-2">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/AUS.png" >
+                <img class="team-logo" src="https://th.bing.com/th/id/OIP.nfWIMe2qmaWrjWadrI-cuAHaFj?pid=ImgDet&rs=1" >
+                <div class="box-2">
+                    <h2><button class="plus-button">Austrialia</button></h2>
+                    <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+                </div>
+            </div>
+            <div class="team-3">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/ENG.png" >
+                <img class="team-logo" src="https://th.bing.com/th/id/OIP.KFpuGihAdqxcRA9-O04CUAHaFj?w=221&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" >
+                <div class="box-3">
+                    <h2><button class="plus-button">ENGLAND</button></h2>
+                    <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+                </div>
+            </div>
+            <div class="team-4">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/NZ.png" >
+                <img class="team-logo" src="https://th.bing.com/th/id/OIP.RizgHgSEYP8ckWtE7haclwHaIE?w=149&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" >
+                <div class="box-4">
+                    <h2><button class="plus-button">NEW-ZELAND</button></h2>
+                    <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+                </div>
+            </div>
+            <div class="team-5">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/SL.png" >
+                <img class="team-logo" src="https://www.bing.com/th?id=OIP.8Bif9h5MkeKYvneSOH1m9AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+                <div class="box-5">
+                    <h2><button class="plus-button">SRI-LANKA</button></h2>
+                    <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+                </div>
+            </div>
+            <div class="team-6">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/SA.png" >
+                <img class="team-logo" src="https://www.bing.com/th?id=OIP.Lmvqn_pJ_OmsCXhYwOL7QQHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+                <div class="box-6">
+                    <h2><button class="plus-button">SOUTH-AFRICA</button></h2>
+                    <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+                </div>
+            </div>
+            <div class="team-7">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/WI.png" >
+                <img class="team-logo" src="https://www.bing.com/th?id=OIP.zCDPgaWF-GKRAE-3wwZxlQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+                <div class="box-7">
+                    <h2><button class="plus-button">WEST-INDIES</button></h2>
+                    <p><b>DESCRIPTION :</b> this team is very fast and no.1 team</p>
+                </div>
+            </div>
+            <div class="team-8">
+                <img class="team-image" src="https://resources.pulse.icc-cricket.com/ICC/teams/thumbnail/men/ZIM.png" >
+                <img class="team-logo" src="https://th.bing.com/th/id/OIP.5ecKS0cyqXlpNnjbI1cgVgAAAA?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" >
+                <div class="box-8">
+                    <h2><button class="plus-button">ZIMBAWAE</button></h2>
+                    <p><b>DESCRIPTION :</b> this is zimbawae</p>
+                </div>
+            </div>
+            </div>
+        </main>
+          <!-- content for teampage and team club ends -->
+        </body>
+    </html>

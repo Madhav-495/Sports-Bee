@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports-Bee</title>
+
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+    <!-- css stylesheet -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/livematch.css">
+        <!-- <script src="javascript/livematch.js"></script> -->
+
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+        
+      </nav>
+    <!-- main match card starts -->
+    <div class="container mx-auto">
+      <div class="container mt-5 mx-auto">
+        <div class="card  " style="height:50%;width:73%;margin-left:14%;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <h5 id="matchid">abcde</h5>
+              <a href="#" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+    </div>
+    </div>
+    <!-- Match cards ends -->
+    <div class="container text-center mt-5 mb-5">
+      <h1>Chat Section</h1>
+    </div>
+    <!-- chatbox starts -->
+    <div class="container mt-5 mb-5" >
+      <div class="card mx-auto " style="max-width:557px" style="box-shadow: 5px 5px 10px #888888;">
+        <!-- chat box card header starts -->
+        <div class="card-header bg-transparent d-flex">
+          <div style="width:50px;height:50px;border-radius:50%;border:2px solid red;padding:2px;" >
+            <img src="/images/<%=data.image%>" alt="" class="img-fluid rounded-circle" style="height:43px;width:50px;" id="sender_image">
+          </div>
+          <h4 class="ml-3 mt-2" id="name"><%=data.name%></h4>
+        </div>
+        <!-- Card header ends -->
+        <!-- Card body starts -->
+        <div class="card-body p-4" style="height:500px;overflow:auto;"id="card-body">
+          
+          <!-- Incoming chat section starts -->
+              
+          <!-- incoming chat section ends -->
+        </div>
+        <!-- Card body ends -->
+         <!-- chatbox Card footer starts -->
+        <div class="card-footer bg-white position-absolute w-100 bottom-0 m-0 p-1" style="bottom:0">
+          <div class="input-group">
+              <div class="input-group-text bg-transparent border-0">
+                  <button class="btn btn-light text-secondary">
+                      <i class="fas fa-paperclip"></i>
+                  </button>
+              </div>
+              <input type="text" class="form-control border-0" placeholder="Write a message..." id="message_content">
+              <div class="input-group-text bg-transparent border-0">
+                  <button class="btn btn-light text-secondary" type="submit" id="submit">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  </button>
+              </div>
+              <div class="input-group-text bg-transparent border-0">
+                  <button class="btn btn-light text-secondary">
+                      <i class="fas fa-microphone"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <!-- Chat box card footer ends -->
+      </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io.connect('http://localhost:5000');
+
+  
+  let submit_button=document.getElementById('submit');
+  socket.on('connect', function() {
+    console.log('Connected to the server!');
+  });
+
+  submit_button.addEventListener('click',()=>{
+    let content=document.getElementById('message_content').value;
+    let id=document.getElementById('matchid').textContent;
+    document.getElementById('message_content').value="";
+    let message_object={
+      text:content,
+      matchid:id,
+      image:document.getElementById('sender_image').getAttribute('src')
+    }
+    const div = document.createElement('div');
+    div.innerHTML = `
+      <div class="d-flex align-items-baseline mb-4">
+        <div style="width:50px;height:50px;border-radius:50%;border:2px solid red;padding:2px;float:left;">
+          <img src="/images/<%=data.image%>" alt="" class="img-fluid rounded-circle" style="height:43px;width:50px;">
+        </div>
+        <div class="text-container" style="width: 100%;">
+          <div class="card d-inline-block p-2 px-3 m-1" style="background-color: orange;">
+            ${content}
+          </div>
+        </div>
+        
+      </div>
+    `;
+    document.getElementById('card-body').appendChild(div);
+    socket.emit('message',message_object)
+
+    
+  })
+  socket.on('server',(text_object)=>{
+    // console.log("hello world")
+    const div = document.createElement('div');
+    div.innerHTML = `
+      <div class="d-flex align-items-baseline mb-4">
+        <div style="width:50px;height:50px;border-radius:50%;border:2px solid red;padding:2px;float:left;">
+          <img src=${text_object.image} alt="" class="img-fluid rounded-circle" style="height:43px;width:50px;">
+        </div>
+        <div class="text-container" style="width: 100%;">
+          <div class="card d-inline-block p-2 px-3 m-1" style="background-color: #b1fc03;">
+            ${text_object.text}
+          </div>
+        </div>
+        
+      </div>
+    `;
+    document.getElementById('card-body').appendChild(div);
+    
+  })
+</script>
+
+
+
+</html>

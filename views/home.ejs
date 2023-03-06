@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports-Bee</title>
+
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+
+    <!-- css stylesheet -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <!-- navbar started -->
+        <%- include('./partials/nav') %>
+          <!-- navbar ended -->
+          <div class="container text-right">
+            <button type="button" class="btn btn-primary mt-3"><a href="/update" style="color:white
+            ;text-decoration: none;">Update Info</a></button>
+          </div>
+        <div class="container my-5">
+            <div class="row">
+              <div class="col-md-3 ">
+                <img src="/images/sachin.webp" class="img-fluid rounded-circle mb-3 " style="width:100%">
+              </div>
+              <div class="col-md-9">
+                <h2><%=data.name%></h2>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum malesuada ante, eu tempor libero feugiat eget. Sed euismod, mauris et interdum congue, elit velit varius erat, vel facilisis ante sapien vel neque. Suspendisse potenti. Donec velit velit, volutpat eu libero eget, rhoncus euismod justo. Nam aliquet bibendum varius. Proin posuere hendrerit turpis, quis blandit turpis tincidunt id. Integer tincidunt leo non eros blandit, eget consectetur nunc egestas. Nulla id justo id nisi fringilla commodo. Nullam aliquet orci non purus consectetur, eu rutrum est elementum. Sed quis odio laoreet, hendrerit mi ut, faucibus eros.</p>
+                <p>email:<%=data.email%></p>
+                <p>phone:<%=data.phone%></p>
+                <p>supporting team:madhavagrawal012</p>
+              </div>
+            </div>
+          </div>
+          <div class="container text-center">
+            <a href="#"><i class="fab fa-facebook fa-3x m-3"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-3x m-3"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-3x m-3"></i></a>
+          </div>
+    </body>
+</html>
